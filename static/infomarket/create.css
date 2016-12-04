@@ -1,0 +1,107 @@
+/*top/right/bottom/left*/
+
+#container-page{
+	width: 625px;
+	height: 742px;
+	border: 1px solid black;
+	margin: 20px auto;
+	
+}
+
+#container-top{
+	width: 622px;
+	height: 38px;
+	border: 2px solid black;
+	background-color: #adc8ff;
+	font-family: arial;
+	font-size: 22px;
+	color: black;
+	padding-top: 14px;
+}
+
+#container-middle{
+	width: 623px;
+	height: 657px;
+	border: 1px solid black;
+	background-color: white;
+}
+
+
+
+#create-box{
+	margin: 50px auto;
+	width: 600px;
+	height: 170px;
+	border: 2px solid black;
+}
+
+	#create-title{
+	width: 593px;
+	height: 20px;
+	border: 1px solid black;
+	background-color: #d5e1f2;
+	font-family: arial;
+	font-size: 14px;
+	color: black;
+	padding-top: 5px;
+	padding-left: 5px;
+	}
+
+	#create-form{
+	position: relative;
+	top: 20px;
+	left: 10px;
+	font-family: arial;
+	font-size: 16px;
+	color: black;
+	}
+
+	#yourbet{
+	width: 96%;
+
+	}
+
+	#outcome{
+	width: 48%;
+	}
+
+	#create-bet-button{
+		position: relative;
+		top: 9px ;
+		left:523px;
+		width: 75px;
+		height: 20px;
+		border: 2px solid black;
+		font-family: arial;
+		text-align: center;
+		font-size: 14px;
+		padding-top: 1px;
+		}
+
+
+#footer-content{
+	width: 623px;
+	height: 25px;
+	border: 1px solid black;
+	font: verdana;
+	background-color: #adc8ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

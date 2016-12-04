@@ -1,0 +1,162 @@
+
+<html>
+
+	<head>
+
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'infomarket/index.css' %}" />
+	
+	</head>
+
+	<title> Information Market</title>
+
+	<body background="https://s16.postimg.org/3kz9r1h5x/27360875_Abstract_black_and_white_binary_code_ba.jpg">
+		<div id="container-page">
+			<div id="container-top">
+			&nbsp;&nbsp;Welcome to THE INFORMATION MARKET
+			</div>
+
+			<div id="container-middle">
+				
+				<div id="create-bet-button">
+					<a href="{% url 'login' %}"> Create Bet </a>
+				</div>
+
+				<div id="bet-box">
+					<div id="bet-question">
+						&nbsp;> Which party will win the White House in 2020?
+					</div>
+
+					<table id="bet-table">
+						<tr>
+							<td>• Democratic Party</td>
+							<td>51%</td>
+						</tr>
+						<tr>
+							<td>• Republican Party</td>
+							<td>49%</td>
+						</tr>
+					</table>
+
+					<div id="place-bet-button">
+						<a href="{% url 'login' %}"> Place Bet </a>
+					</div>
+				
+				</div>
+
+				<div id="bet-box">
+					<div id="bet-question">
+						&nbsp;> Will the S&P500 end 2016 above 2100 points?
+					</div>
+
+					<table id="bet-table">
+						<tr>
+							<td>• Yes</td>
+							<td>59%</td>
+						</tr>
+						<tr>
+							<td>• No</td>
+							<td>41%</td>
+						</tr>
+					</table>
+
+					<div id="place-bet-button">
+						<a href="{% url 'login' %}"> Place Bet </a>
+					</div>
+				
+				</div>
+
+				<div id="bet-box">
+					<div id="bet-question">
+						&nbsp;> Who will win the most gold medals at the 2020 Olympics?
+					</div>
+
+					<table id="bet-table">
+						<tr>
+							<td>• USA</td>
+							<td>39%</td>
+						</tr>
+						<tr>
+							<td>• China</td>
+							<td>61%</td>
+						</tr>
+					</table>
+
+					<div id="place-bet-button">
+						<a href="{% url 'login' %}"> Place Bet </a>
+					</div>
+				
+				</div>
+
+				<div id="bet-box">
+					<div id="bet-question">
+						&nbsp;> Will Donald Trump complete his 4 year term?
+					</div>
+
+					<table id="bet-table">
+						<tr>
+							<td>• Yes</td>
+							<td>32%</td>
+						</tr>
+						<tr>
+							<td>• No</td>
+							<td>68%</td>
+						</tr>
+					</table>
+
+					<div id="place-bet-button">
+						<a href="{% url 'login' %}"> Place Bet </a>
+					</div>
+				
+				</div>
+
+				
+				
+
+			</div>
+
+			<div id="footer-content"></div>
+
+		</div>
+
+	</body>
+
+</html>
+
+
+<!-- For loop example -->
+
+<!-- {% for currency in currency_list %}
+                <option value="{{ currency.identifier }}">{{ currency.long_name }}</option>
+            {% endfor %} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

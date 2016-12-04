@@ -1,0 +1,112 @@
+/*top/right/bottom/left*/
+
+#container-page{
+	width: 625px;
+	height: 740px;
+	border: 1px solid black;
+	margin: 20px auto;
+	
+}
+
+#container-top{
+	width: 623px;
+	height: 38px;
+	border: 1px solid black;
+	background-color: #adc8ff;
+	font-family: arial;
+	font-size: 22px;
+	color: black;
+	padding-top: 14px;
+
+}
+
+#container-middle{
+	width: 623px;
+	height: 657px;
+	border: 1px solid black;
+	background-color: white ;
+}
+
+	#bet-box{
+		float: left;
+		width: 500px;
+		height: 140px;
+		border: 2px solid black;
+		margin:10px ;
+		
+	}
+
+		#bet-question{
+		width: 498px;
+		height: 27px;
+		border: 1px solid black;
+		padding-top: 11px;
+		font-family: arial;
+		background-color: #d5e1f2;
+		}
+
+		#bet-table{
+		position: relative;
+		left:20px;
+		top: 20px;
+		width: 250px;
+		height: 50px;
+		/*border: 1px solid black;*/
+		font-family: arial;
+		}
+
+		#place-bet-button{
+		position: relative;
+		padding-top: 3px;
+		left:423px;
+		top: 23px;
+		width: 75px;
+		height: 22px;
+		border: 2px solid black;
+		font-family: arial;
+		text-align: center;
+		font-size: 14px;
+		}
+	
+	#create-bet-button{
+		float: right;
+		position: relative;
+		top: 10px;
+		left: -8px;
+		padding: 8px;
+		padding-top: 10px;
+		width: 70px;
+		height: 20px;
+		border: 2px solid black;
+		font-family: arial;
+		text-align: center;
+		font-size: 14px;
+	}
+
+
+#footer-content{
+	width: 623px;
+	height: 25px;
+	border: 1px solid black;
+	font: verdana;
+	background-color: #adc8ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
