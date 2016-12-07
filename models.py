@@ -16,7 +16,7 @@ class Choice(models.Model):
         return self.choice_text
 
 class Bet(models.Model):
-    bet = models.ManyToManyField(Choice)
+    choice = models.ManyToManyField(Choice)
     bet_user = models.CharField(max_length=200)
     bet_amount = models.IntegerField(default=0)
     def __str__(self):

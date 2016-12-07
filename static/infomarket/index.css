@@ -30,9 +30,10 @@
 	#bet-box{
 		float: left;
 		width: 500px;
-		height: 140px;
+		height: 635px;
 		border: 2px solid black;
 		margin:10px ;
+		font-family: arial;
 		
 	}
 
@@ -44,6 +45,12 @@
 		font-family: arial;
 		background-color: #d5e1f2;
 		}
+
+	/*	#bet-js{
+		position: relative;
+		left:20px;
+		top: 20px;
+		}*/
 
 		#bet-table{
 		position: relative;

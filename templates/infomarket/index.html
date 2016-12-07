@@ -22,29 +22,60 @@
 					<a href="{% url 'create' %}"> Create Bet </a>
 				</div>
 
+
+
 				<div id="bet-box">
-					<div id="bet-question">
-						&nbsp;> Which party will win the White House in 2020?
-					</div>
 
-					<table id="bet-table">
-						<tr>
-							<td>• Democratic Party</td>
-							<td>51%</td>
-						</tr>
-						<tr>
-							<td>• Republican Party</td>
-							<td>49%</td>
-						</tr>
-					</table>
+					{% if latest_question_list %}
+					    <ul>
+					    {% for question in latest_question_list %}
+					        <li>{{ question.question_text }} &nbsp&nbsp<a href="/infomarket/{{ question.id }}/place">Place Bet</a></li><br>
+					        {% for choice in question.choice_set.all %}
+					        	{{choice.choice_text}} 
+					        		{% for bet in choice.bet_set.all %}
+					        			{{bet}} <br>
+					        		{% endfor %}
+					        {% endfor %}
+					        <br>	
+					    {% endfor %}
+					    </ul>
+					{% else %}
+					    <p>No bets are available.</p>
+					{% endif %}
 
-					<div id="place-bet-button">
-						<a href="{% url 'place' %}"> Place Bet </a>
-					</div>
+						<script>
+
+						// var abcd = [
+						
+						// 	'<div id="bet-question">',
+						// 	'{% if latest_question_list %}',
+						// 	    '{% for question in latest_question_list %}',
+						// 	        ' {{ question.question_text }}', 
+						// 	    '{% endfor %}',
+						// 	'{% else %}',
+						// 	    '<p>No polls are available.</p>',
+						// 	'{% endif %}',
+						// 	'</div>',
+						// 	].join('');	
+
+// var cars = 'Saab,Volvo,BMW,GMC,Nissan,Ford'.split(',');
+// http://stackoverflow.com/questions/21947237/convert-a-django-queryset-into-an-array
+
+						// var cars = ["{{ l_question_list }}"];
+						// document.write(cars)
+						// document.write(cars.length)
+						// for (var c in cars) {
+						//     var newElement = document.createElement('div');
+						//     newElement.id = "bet-box";
+
+						//     newElement.innerHTML = abcd;
+						//     document.getElementById('container-middle').appendChild(newElement);
+						// 	} 
+
+						</script>
 				
-				</div>
 
-				<!-- <div id="bet-box">
+					<!-- <div id="bet-box">
 					<div id="bet-question">
 						&nbsp;> Will the S&P500 end 2016 above 2100 points?
 					</div>
@@ -64,54 +95,11 @@
 						<a href="{% url 'login' %}"> Place Bet </a>
 					</div>
 				
-				</div>
-
-				<div id="bet-box">
-					<div id="bet-question">
-						&nbsp;> Who will win the most gold medals at the 2020 Olympics?
-					</div>
-
-					<table id="bet-table">
-						<tr>
-							<td>• USA</td>
-							<td>39%</td>
-						</tr>
-						<tr>
-							<td>• China</td>
-							<td>61%</td>
-						</tr>
-					</table>
-
-					<div id="place-bet-button">
-						<a href="{% url 'login' %}"> Place Bet </a>
-					</div>
-				
-				</div>
-
-				<div id="bet-box">
-					<div id="bet-question">
-						&nbsp;> Will Donald Trump complete his 4 year term?
-					</div>
-
-					<table id="bet-table">
-						<tr>
-							<td>• Yes</td>
-							<td>32%</td>
-						</tr>
-						<tr>
-							<td>• No</td>
-							<td>68%</td>
-						</tr>
-					</table>
-
-					<div id="place-bet-button">
-						<a href="{% url 'login' %}"> Place Bet </a>
-					</div>
-				
 				</div> -->
 
-				
-				
+
+				</div>
+
 
 			</div>
 
@@ -122,16 +110,6 @@
 	</body>
 
 </html>
-
-
-
-
-
-<!-- For loop example -->
-
-<!-- {% for currency in currency_list %}
-                <option value="{{ currency.identifier }}">{{ currency.long_name }}</option>
-            {% endfor %} -->
 
 
 
