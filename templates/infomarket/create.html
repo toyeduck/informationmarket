@@ -23,10 +23,13 @@
 					</div>
 
 					<form action="" method="post" id="create-form">
+					{% csrf_token %}
 						  <input id="yourbet" placeholder="Enter Bet Here" type="text" name="question"><br><br>
 						  <input type="text" name="outcome-a" id="outcome" placeholder="Enter First Outcome"><br>
 						  <input type="text" name="outcome-b" id="outcome" placeholder="Enter Second Outcome"><br><br>
+						  <input type="text" name="name" id="name" placeholder="Name"><br><br>
 						  <input type="submit" value="Submit">
+						  &nbsp&nbsp<a href="{% url 'index' %}">Back to Home </a> 
 					</form>
 
 				</div>

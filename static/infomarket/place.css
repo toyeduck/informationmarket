@@ -30,8 +30,10 @@
 #create-box{
 	margin: 50px auto;
 	width: 600px;
-	height: 150px;
+	height: 180px;
 	border: 2px solid black;
+	font-size: 14px;
+	color: black;
 }
 
 	#create-title{
